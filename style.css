@@ -1,7 +1,9 @@
 @import url('https://s7uck.github.io/readability.css');
 
 body {font-family: monospace;
- margin: 5%;}
+ margin: 17%;
+ text-shadow: 0px 0px 18px aquamarine;
+ max-width: 50ch;}
 header,footer,hr,hr:before,nav,nav ul {text-align: left;}
 a {color: aquamarine;}
 hr:before {content: "~-~·~-~";
