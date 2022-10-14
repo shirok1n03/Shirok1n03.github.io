@@ -16,9 +16,11 @@ blockquote,pre code {border-color: aquamarine;
  background-color: #111;
  box-shadow: 0px 0px 2px pink inset;}
 
+nav img{filter:invert();}
 @media (prefers-color-scheme: light){
  body {background-color:#eee; color: #555;}
  a, hr:before {color: #777;}
+ nav img {filter: invert();}
 }
 
 h1:first-of-type {
@@ -37,3 +39,4 @@ nav a:hover {background-color:aquamarine; color: #333;}
 nav a:hover img {filter: invert();}
 img.icns {max-width: 1.4em;
  margin-right: 10px;}
+.propic {border-radius: 4px;}
