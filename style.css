@@ -1,7 +1,6 @@
 @import url('https://s7uck.github.io/readability.css');
 
 body {font-family: monospace;
- margin: 17%;
  text-shadow: 0px 0px 18px aquamarine;
  max-width: 50ch;}
 header,footer,hr,hr:before,nav,nav ul {text-align: left;}
@@ -19,6 +18,7 @@ blockquote,pre code {border-color: aquamarine;
 @media (prefers-color-scheme: light){
  body {background-color:#eee; color: #555;}
  a, hr:before {color: #777;}
+ nav img {filter: invert();}
 }
 
 h1:first-of-type {
@@ -37,3 +37,4 @@ nav a:hover {background-color:aquamarine; color: #333;}
 nav a:hover img {filter: invert();}
 img.icns {max-width: 1.4em;
  margin-right: 10px;}
+.propic {border-radius: 4px;}
