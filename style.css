@@ -1,12 +1,12 @@
-@import url('https://s7uck.github.io/readability.css');
+@import url('http://localhost:8080/style.css');
 
 body {font-family: monospace;
  text-shadow: 0px 0px 18px aquamarine;
- max-width: 50ch;}
+ max-width: 50ch;
+margin: unset !important;}
 header,footer,hr,hr:before,nav,nav ul {text-align: left;}
 a {color: aquamarine;}
-hr:before {content: "~-~·~-~";
- color: aquamarine;}
+nav ul {list-style-type: none;}
 details {border-color: pink;}
 button,a.btn {background-color: aquamarine;
  border: pink;
