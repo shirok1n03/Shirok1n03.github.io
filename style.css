@@ -39,4 +39,4 @@ nav a {display: inline-block;
 nav a:hover {background: aquamarine; color: #333;}
 img.icns {max-width: 1.4em; margin-right: 10px;}
 nav a:hover img.icns {filter: invert();}
-.propic {border-radius: 4px;}
+.propic {border-radius: 50%;}
