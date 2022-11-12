@@ -40,3 +40,36 @@ nav a:hover {background: aquamarine; color: #333;}
 img.icns {max-width: 1.4em; margin-right: 10px;}
 nav a:hover img.icns {filter: invert();}
 .propic {border-radius: 50%;}
+
+div.tg_hotfix { display: grid; grid-template-columns: 50% 50%;
+ min-width: 300px;
+ max-width: 455px;
+ margin: 0 auto;
+ padding-left: 42px;
+ overflow: hidden;
+ border-radius: 14px; }
+a.tg_hotfix {
+ all: initial;
+ position: relative;
+ display: inline-block;
+ background-color: #aaaaaabb;
+ border-radius: 2px;
+ padding: 8px 20px;
+ font-family: 'Roboto';
+ font-size: 1.05em;
+ color: #fff;
+ transition: 250ms;
+ font-weight:bold;
+ cursor:pointer;
+ text-align: center;
+ margin: 2px;
+}
+a.tg_hotfix:after {
+ position: absolute;
+ top: 0;
+ right: 0;
+ content: "\2197";
+}
+a.tg_hotfix:hover {
+ background-color: #999;
+}
