@@ -1,37 +1,100 @@
-body {font-family: monospace;
- padding: 7%;
- max-width: 100ch;
- margin: 0 auto;
- line-height: 1.6}
-img {vertical-align: middle}
-a {color: #70cfab; text-decoration: none}
-pre {overflow: auto}
-summary {font-weight: bold}
-hr {border: none}
-hr:before {content: "* * *";
- font-family: fantasy;
- display: block;
- text-align: center}
-header {text-align: center}
-button,a.btn {background-color: aquamarine;
- border: pink;
- color: #333;
+body {
+    font-family: monospace;
+    padding: 7%;
+    max-width: 100ch;
+    margin: 0 auto;
+    line-height: 1.6
 }
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: #70cfab;
+    text-decoration: none
+}
+
+pre {
+    overflow: auto
+}
+
+summary {
+    font-weight: bold
+}
+
+hr {
+    border: none
+}
+
+hr:before {
+    content: "* * *";
+    font-family: fantasy;
+    display: block;
+    text-align: center
+}
+
+header {
+    text-align: center
+}
+
+button,
+a.btn {
+    background-color: aquamarine;
+    border: pink;
+    color: #333;
+}
+
 @media (prefers-color-scheme: light) {
- body {background-color: #DFDBE5;
-  color: #555}
- a,hr:before {color: #777}
- nav img.icns {filter: invert()}
- img.icns:hover {filter: none}
+    body {
+        background-color: #DFDBE5;
+        color: #555
+    }
+
+    a,
+    hr:before {
+        color: #777
+    }
+
+    nav img.icns {
+        filter: invert()
+    }
+
+    img.icns:hover {
+        filter: none
+    }
 }
-nav a {display: inline-block;
- padding: 4px 6px;
- border-radius: 12px}
-nav a:hover {background: aquamarine; color: #333}
-img.icns {max-width: 1.4em; margin-right: 10px}
-nav a:hover img.icns {filter: invert()}
-.propic {border-radius: 50%}
+
+nav a {
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 12px
+}
+
+nav a:hover {
+    background: aquamarine;
+    color: #333
+}
+
+img.icns {
+    max-width: 1.4em;
+    margin-right: 10px
+}
+
+nav a:hover img.icns {
+    filter: invert()
+}
+
+.propic {
+    border-radius: 50%
+}
+
 footer {
     font-size: .85em;
     color: #777;
+}
+
+#centra {
+    display: flex;
+    align-items: center;
 }
