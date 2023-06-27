@@ -45,18 +45,61 @@ button {
     border: 1px solid pink;
 }
 
-button {
-    font-size: 1rem;
-    padding: 0.8em 2em;
-    background-color: #000;
-    border: 3px solid aquamarine;
-    border-radius: 1em;
-    color: #fff;
-    font-weight: bolder;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-    box-shadow: -5px 5px 0px 0px aquamarine;
-  }
-  
+
+.Btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230, 230, 230, 0.466);
+  border: none;
+  border-radius: 7px;
+  backdrop-filter: blur(5px);
+  color: rgb(26, 26, 26);
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.8px;
+}
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(147deg, #E5FFFF, #2525ff);
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  border-radius: 7px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover {
+  transform: translateY(-2px) translateX(-2px);
+}
+
+.Btn:hover .BG {
+  transform: translateY(2px) translateX(2px);
+}
+
+.Btn:active {
+  transform: translateY(7px) translateX(7px);
+}
+
+.Btn:active .BG {
+  transform: translateY(-7px) translateX(-7px);
+}  
   button:hover {
     transform: translate(5px, -5px);
   }
