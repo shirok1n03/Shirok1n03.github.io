@@ -138,28 +138,6 @@ header {
   transition: all .3s;
 }
 
-.Btn:hover {
-  transform: translateY(-2px) translateX(-2px);
-}
-
-.Btn:hover .BG {
-  transform: translateY(2px) translateX(2px);
-}
-
-.Btn:active {
-  transform: translateY(7px) translateX(7px);
-}
-
-.Btn:active .BG {
-  transform: translateY(-7px) translateX(-7px);
-}  
-  button:hover {
-    transform: translate(5px, -5px);
-  }
-
-a.button_text {
-    color: #ffffff;
-}
 
 @media (prefers-color-scheme: light) {
     body {
