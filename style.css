@@ -1,44 +1,73 @@
+/* --- Generali --- */
 body {
     font-family: monospace;
     padding: 7%;
     max-width: 100ch;
     margin: 0 auto;
     line-height: 1.6;
-    background-image: url("data:image/svg+xml,%3Csvg width='76' height='18' viewBox='0 0 76 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 18c-2.43-1.824-4-4.73-4-8 0-4.418-3.582-8-8-8H0V0h20c5.523 0 10 4.477 10 10 0 4.418 3.582 8 8 8h20c4.418 0 8-3.582 8-8 0-5.523 4.477-10 10-10v2c-4.418 0-8 3.582-8 8 0 3.27-1.57 6.176-4 8H32zM64 0c-1.67 1.256-3.748 2-6 2H38c-2.252 0-4.33-.744-6-2h32z' fill='%2350495a' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E") !important
+    background-image: url("data:image/svg+xml,%3Csvg width='76' height='18' viewBox='0 0 76 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 18c-2.43-1.824-4-4.73-4-8 0-4.418-3.582-8-8-8H0V0h20c5.523 0 10 4.477 10 10 0 4.418 3.582 8 8 8h20c4.418 0 8-3.582 8-8 0-5.523 4.477-10 10-10v2c-4.418 0-8 3.582-8 8 0 3.27-1.57 6.176-4 8H32zM64 0c-1.67 1.256-3.748 2-6 2H38c-2.252 0-4.33-.744-6-2h32z' fill='%2350495a' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
 }
 
+/* --- Immagini --- */
 img {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
+/* --- Link --- */
 a {
     color: #70cfab;
-    text-decoration: none
+    text-decoration: none;
 }
 
+nav a {
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 12px;
+}
+nav a:hover {
+    background: aquamarine;
+    color: #333;
+}
+
+/* --- Icone --- */
+img.icns {
+    max-width: 1.4em;
+    margin-right: 10px;
+}
+nav img.icns {
+    filter: invert();
+}
+nav a:hover img.icns {
+    filter: invert(0);
+}
+
+/* --- Testo preformattato --- */
 pre {
-    overflow: auto
+    overflow: auto;
 }
 
+/* --- Sommari --- */
 summary {
-    font-weight: bold
+    font-weight: bold;
 }
 
+/* --- Separatore --- */
 hr {
-    border: none
+    border: none;
 }
-
 hr:before {
     content: "* * *";
     font-family: fantasy;
     display: block;
-    text-align: center
+    text-align: center;
 }
 
+/* --- Intestazione --- */
 header {
-    text-align: center
+    text-align: center;
 }
 
+/* --- Pulsanti --- */
 .bn62 {
     color: #1cc49d;
     background-color: #82c4ca;
@@ -50,145 +79,107 @@ header {
     width: 8em;
     font-size: large;
     font-weight: 600;
-  }
-
-
+}
 
 .button {
-  position: relative;
-  width: 120px;
-  height: 40px;
-  background-color: #0c9eb1;
-  display: flex;
-  align-items: center;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  border: none;
-  padding: 12px;
-  gap: 12px;
-  border-radius: 8px;
-  cursor: pointer;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #0c9eb1;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
-
 .button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  left: -4px;
-  top: -1px;
-  margin: auto;
-  width: 128px;
-  height: 48px;
-  border-radius: 10px;
-  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
-  z-index: -10;
-  pointer-events: none;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .button::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
-  transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(20px);
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: scale(0.95);
+    filter: blur(20px);
 }
-
 .button:hover::after {
-  filter: blur(30px);
+    filter: blur(30px);
 }
-
 .button:hover::before {
-  transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
-
 .button:active::before {
-  scale: 0.7;
+    transform: scale(0.7);
 }
 
-
+/* --- Testo --- */
 .text {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(230, 230, 230, 0.466);
-  border: none;
-  border-radius: 7px;
-  backdrop-filter: blur(5px);
-  color: rgb(26, 26, 26);
-  display: flex;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.8px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 230, 230, 0.466);
+    border: none;
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+    color: rgb(26, 26, 26);
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.8px;
 }
 
 .BG {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(147deg, #E5FFFF, #2525ff);
-  z-index: -1;
-  left: 6px;
-  top: 6px;
-  border-radius: 7px;
-  pointer-events: none;
-  transition: all .3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(147deg, #E5FFFF, #2525ff);
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    border-radius: 7px;
+    pointer-events: none;
+    transition: all 0.3s;
 }
 
+/* --- Footer --- */
+footer {
+    font-size: 0.85em;
+    color: #777;
+}
 
+/* --- Media Queries --- */
 @media (prefers-color-scheme: light) {
     body {
         background-color: aquamarine;
-        color: #555
+        color: #555;
     }
-
     a,
     hr:before {
-        color: #777
+        color: #777;
     }
-
-    nav img.icns {
-        filter: invert()
-    }
-
-    img.icns:hover {
-        filter: none
-    }
-}
-
-nav a {
-    display: inline-block;
-    padding: 4px 6px;
-    border-radius: 12px
-}
-
-nav a:hover {
-    background: aquamarine;
-    color: #333
-}
-
-img.icns {
-    max-width: 1.4em;
-    margin-right: 10px
-}
-
-nav a:hover img.icns {
-    filter: invert()
-}
-
-.propic {
-    border-radius: 50%
-}
-
-footer {
-    font-size: .85em;
-    color: #777;
 }
 
 #centra {
     display: flex;
     align-items: center;
+}
+
+.propic {
+    border-radius: 50%;
 }
